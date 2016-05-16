@@ -1,5 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Course, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "(Constructor)" do
+    it "should default status to proposed" do
+      expect(Course.new.proposed?).to be true
+    end
+  end
 end
