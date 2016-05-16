@@ -10,7 +10,7 @@ class CourseDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     name: Field::String,
-    status: Field::String,
+    status: Field::EnumField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
