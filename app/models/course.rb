@@ -1,3 +1,4 @@
 class Course < ActiveRecord::Base
-  enum status: [:proposed, :accepted]
+  enum :semesters => [:fall, :spring, :both]
+  enum :status => [:proposed, :accepted]
 end

@@ -11,6 +11,7 @@ class CourseDashboard < Administrate::BaseDashboard
     id: Field::Number,
     name: Field::String,
     status: Field::EnumField,
+    # semesters: Field::EnumField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -23,6 +24,7 @@ class CourseDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :name,
+    # :semesters,
     :status,
     :created_at,
     :updated_at,
@@ -33,6 +35,7 @@ class CourseDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :id,
     :name,
+    # :semesters,
     :status,
     :created_at,
     :updated_at,
@@ -43,6 +46,7 @@ class CourseDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :name,
+    # :semesters,
     :status,
   ].freeze
 
