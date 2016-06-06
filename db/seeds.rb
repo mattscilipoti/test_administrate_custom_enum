@@ -9,4 +9,4 @@
 Course.destroy_all
 
 Course.create!(name: 'TEST COURSE1')
-Course.create!(name: 'TEST COURSE2', status: Course.statuses[:accepted])
+Course.create!(name: 'TEST COURSE2', status: Course.statuses[:accepted], semester: Course.semesters[:both])

@@ -10,8 +10,8 @@ class CourseDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     id: Field::Number,
     name: Field::String,
-    status: Field::EnumField,
-    # semesters: Field::EnumField,
+    status: EnumField, # use "bare" class, see https://github.com/thoughtbot/administrate/issues/584
+    semester: EnumField, # use "bare" class, see https://github.com/thoughtbot/administrate/issues/584
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -24,7 +24,7 @@ class CourseDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :name,
-    # :semesters,
+    :semester,
     :status,
     :created_at,
     :updated_at,
@@ -35,7 +35,7 @@ class CourseDashboard < Administrate::BaseDashboard
   SHOW_PAGE_ATTRIBUTES = [
     :id,
     :name,
-    # :semesters,
+    :semester,
     :status,
     :created_at,
     :updated_at,
@@ -46,7 +46,7 @@ class CourseDashboard < Administrate::BaseDashboard
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
     :name,
-    # :semesters,
+    :semester,
     :status,
   ].freeze
 

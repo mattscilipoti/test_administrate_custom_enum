@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20160516174613) do
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
     t.integer  "status",     default: 0, null: false
-    t.integer  "semesters",  default: 0, null: false
+    t.integer  "semester",   default: 0, null: false
   end
 
 end
